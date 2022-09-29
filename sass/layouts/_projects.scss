@@ -1,0 +1,31 @@
+.projects {
+  display: flex;
+}
+
+.projects__item + .projects__item {
+  padding-left: 30px;
+}
+
+.thumb {
+  position: relative;
+}
+
+.projects-thumb {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.projects-thumb__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--hero-text);
+}
