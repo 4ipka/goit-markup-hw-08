@@ -139,11 +139,22 @@
           <ul class="projects">
             <li class="projects__item">
               <div class="thumb">
-                <img
-                  src="./images/box1.jpg"
-                  alt="Процесс написання коду"
-                  width="370"
-                />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 1200px )"
+                    srcset="
+                      ./images/projects/projects_lg-@1x.jpg 1x,
+                      ./images/projects/projects_lg-@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="./images/projects/projects_lg-@1x.jpg 1x"
+                    alt="Процесс написання коду"
+                  />
+                </picture>
+
                 <div class="projects-thumb">
                   <p class="projects-thumb__text">Десктопні додатки</p>
                 </div>
@@ -151,11 +162,21 @@
             </li>
             <li class="projects__item">
               <div class="thumb">
-                <img
-                  src="./images/box2.jpg"
-                  alt="Робота з ноутбуком та смартфоном"
-                  width="370"
-                />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 1200px )"
+                    srcset="
+                      ./images/projects/projects1_lg-@1x.jpg 1x,
+                      ./images/projects/projects1_lg-@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="./images/projects/projects1_lg-@1x.jpg 1x"
+                    alt="Робота з ноутбуком та смартфоном"
+                  />
+                </picture>
                 <div class="projects-thumb">
                   <p class="projects-thumb__text">Мобільні додатки</p>
                 </div>
@@ -163,11 +184,21 @@
             </li>
             <li class="projects__item">
               <div class="thumb">
-                <img
-                  src="./images/box3.jpg"
-                  alt="Веб-дизайнер вибирає колір на графічному планшеті"
-                  width="370"
-                />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 1200px )"
+                    srcset="
+                      ./images/projects/projects2_lg-@1x.jpg 1x,
+                      ./images/projects/projects2_lg-@2x.jpg 2x
+                    "
+                  />
+
+                  <img
+                    src="./images/projects/projects2_lg-@1x.jpg 1x"
+                    alt="Дизайнер вибирає колір на графічному планшеті"
+                  />
+                </picture>
                 <div class="projects-thumb">
                   <p class="projects-thumb__text">Дизайнерські рішення</p>
                 </div>
@@ -201,7 +232,7 @@
                 />
                 <!-- mobile -->
                 <source
-                  media="(min-width: 480px)"
+                  media="(max-width: 767px)"
                   srcset="
                     ./images/team/img_sm-@1x.jpg 1x,
                     ./images/team/img_sm-@2x.jpg 2x
@@ -307,7 +338,7 @@
                 />
                 <!-- mobile -->
                 <source
-                  media="(min-width: 480px)"
+                  media="(max-width: 767px)"
                   srcset="
                     ./images/team/img(1)_sm-@1x.jpg 1x,
                     ./images/team/img(1)_sm-@2x.jpg 2x
@@ -413,7 +444,7 @@
                 />
                 <!-- mobile -->
                 <source
-                  media="(min-width: 480px)"
+                  media="(max-width: 767px)"
                   srcset="
                     ./images/team/img(2)_sm-@1x.jpg 1x,
                     ./images/team/img(2)_sm-@2x.jpg 2x
@@ -519,7 +550,7 @@
                 />
                 <!-- mobile -->
                 <source
-                  media="(min-width: 480px)"
+                  media="(max-width: 767px)"
                   srcset="
                     ./images/team/img(3)_sm-@1x.jpg 1x,
                     ./images/team/img(3)_sm-@2x.jpg 2x
@@ -813,7 +844,12 @@
           <div class="register-form-group" role="group">
             <label class="register-form-field">
               <span class="register-form-label">Ім'я</span>
-              <input class="register-form-input" type="text" name="" required />
+              <input
+                class="register-form-input"
+                type="text"
+                name="text"
+                required
+              />
               <svg class="register-form-icon" width="18px" height="18px">
                 <use href="./images/icons.svg#user"></use>
               </svg>
@@ -824,7 +860,7 @@
               <input
                 class="register-form-input"
                 type="tel"
-                name=""
+                name="tel"
                 required
                 minlength="12"
                 maxlength="12"
@@ -839,7 +875,7 @@
               <input
                 class="register-form-input"
                 type="email"
-                name=""
+                name="email"
                 required
               />
               <svg class="register-form-icon" width="18px" height="18px">
@@ -851,8 +887,7 @@
               <span class="register-form-heading">Коментар</span>
               <textarea
                 class="register-form-message"
-                name=""
-                id=""
+                name="comment"
                 rows="5"
                 placeholder="Введіть текст"
               ></textarea>
@@ -864,7 +899,7 @@
               class="register-form-checkbox visually-hidden"
               type="checkbox"
               name="checkbox"
-              id=""
+              id="checkbox"
               required
             />
             <svg class="register-form-icons" width="16px" height="15px">
